@@ -1,0 +1,32 @@
+.accordion {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.accordion-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px #121212 solid;
+    border-right: 2px #121212 solid;
+    transform: rotate(135deg);
+    margin-left: 8px;
+    transition: .1s transform cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.accordion-arrow-active {
+    transform: rotate(-45deg);
+}
+
+.accordion-child {
+    overflow: hidden;
+    transition: .5s height cubic-bezier(0.39, 0.58, 0.57, 1);
+}
